@@ -35,11 +35,11 @@ public class TaskList<T extends Task> implements Iterable<T>{
                 .toList();
     }
     public void printTasks(List<T> taskList) {
-        taskList.forEach(task -> System.out.println(task.getTitle() + " - " + task.getDescription() + " - " + task.getDueDate()));
+        taskList.forEach(System.out::println); //Calls toString() on each Task. It knows if the object is a Task or GardenTask, thus knows which toString() to call.
     }
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return tasks.iterator();
     }
 }

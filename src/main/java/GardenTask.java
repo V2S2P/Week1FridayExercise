@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.List;
 
 public class GardenTask extends Task{
     private String gardenLocation;
@@ -17,5 +18,10 @@ public class GardenTask extends Task{
 
     public void setGardenLocation(String gardenLocation) {
         this.gardenLocation = gardenLocation;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " - Location " + gardenLocation;
     }
 }

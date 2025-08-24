@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -21,6 +22,8 @@ public class Main {
         taskList.addTask(task2);
         taskList.addTask(task3);
         taskList.addTask(gardenTask);
+
+        //taskList.forEach(System.out::println);
 
         System.out.println("Due Today Tasks: ");
         taskList.printTasks(taskList.getTasksDueToday());

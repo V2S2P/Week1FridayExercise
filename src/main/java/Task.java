@@ -34,4 +34,9 @@ public class Task {
     public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
+
+    @Override
+    public String toString() {
+        return title + " " + description + " " + dueDate;
+    }
 }
